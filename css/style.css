@@ -55,6 +55,50 @@ h3 {
 /* Containers */
 
 .container {
-  width: min(1280px, 80%);
-  margin-inline: auto;
+  width: min(1280px, 90%);
+  /* border: 3px solid gold; */
+  margin: 2rem auto 0;
+}
+
+/* Buttons */
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  background: tomato;
+  border: 0;
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+  white-space: nowrap;
+  border-radius: 8px;
+}
+
+.btn--outline {
+  background: #f5f5f5;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn--outline:hover {
+  background: var(--color-primary);
+  color: #f5f5f5;
+}
+
+/* Header Section */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 2.4rem;
+  margin-top: 0;
+}
+
+.site-title {
+  text-decoration: none;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #0e0e0e;
 }
