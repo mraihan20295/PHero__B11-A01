@@ -133,7 +133,7 @@ img {
   margin-top: 0;
 }
 
-.site-title {
+.site-logo {
   text-decoration: none;
   font-size: 3.2rem;
   font-weight: 700;
@@ -368,4 +368,27 @@ img {
 .newsletter__subscribe .btn {
   padding: 1.7rem 3.4rem;
   border-radius: 0px 8px 8px 0px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #fff;
+  padding: 5rem 16rem;
+}
+
+footer .site-logo {
+  text-align: center;
+  display: block;
+}
+
+footer hr {
+  margin-block: 3.2rem;
+  background: rgba(14, 14, 14, 0.1);
+}
+
+.footer__social-media-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 2.3rem;
 }
