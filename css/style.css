@@ -187,6 +187,10 @@ img {
   margin-bottom: 2.4rem;
 }
 
+.vision__description {
+  width: 85%;
+}
+
 .vision__articles {
   margin-block: 3.2rem;
   display: flex;
