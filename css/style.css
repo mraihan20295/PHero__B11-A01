@@ -15,7 +15,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  line-height: 1;
 }
 
 /* Typography */
@@ -60,6 +59,10 @@ h3 {
   margin: 2rem auto 0;
 }
 
+main > section {
+  margin-block: 8rem;
+}
+
 /* Buttons */
 
 .btn {
@@ -67,6 +70,7 @@ h3 {
   display: inline-block;
   cursor: pointer;
   background: tomato;
+  color: #fff;
   border: 0;
   font-weight: 600;
   font-size: 1.8rem;
@@ -77,7 +81,11 @@ h3 {
 
 .btn--primary {
   background: var(--color-primary);
-  color: #fff;
+}
+
+.btn--small {
+  font-size: 1.6rem;
+  padding: 1.1rem 2rem;
 }
 
 .btn--outline {
@@ -90,6 +98,22 @@ h3 {
 .btn--outline:hover {
   background: var(--color-primary);
   color: #f5f5f5;
+}
+
+/* Cards */
+
+.card {
+  padding: 2.4rem;
+  border-radius: 16px;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+}
+
+.card__title {
+  margin-top: 2.4rem;
+}
+
+.card__body {
+  padding-top: 2.4rem;
 }
 
 /* Image Settings */
@@ -121,6 +145,7 @@ img {
 .hero {
   display: flex;
   align-items: center;
+  margin-top: 0;
   padding: 8rem;
   background: var(--color-secondary);
   border-radius: 24px;
@@ -133,4 +158,75 @@ img {
 
 .hero__content h1 {
   margin-block: 1rem 2.4rem;
+}
+
+/* Pillars Section */
+
+.pillars__content {
+  display: flex;
+  column-gap: 2.4rem;
+  margin-top: 3.2rem;
+}
+
+/* Vision Section */
+
+.vision__heading {
+  margin-bottom: 2.4rem;
+}
+
+.vision__articles {
+  margin-block: 3.2rem;
+  display: flex;
+  column-gap: 2.4rem;
+}
+
+.vision__articles .btn {
+  margin-top: 2.4rem;
+}
+
+.vision__article-1 {
+  background: rgba(84, 144, 245, 0.2);
+}
+
+.vision__article-1 .btn {
+  background: rgba(84, 144, 245, 1);
+}
+
+.vision__article-2 {
+  background: rgba(198, 228, 214, 1);
+}
+
+.vision__article-2 .btn {
+  background: rgba(9, 161, 92, 1);
+}
+
+.vision__article-3 {
+  background: rgba(247, 235, 207, 1);
+}
+
+.vision__article-3 .btn {
+  background: rgba(255, 194, 57, 1);
+}
+
+/* Vision Quote Sub-Section*/
+
+.quote {
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  padding: 4.8rem 2.4rem;
+  background-color: #fff;
+  background-image: url(../assets/quote-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: 2.4rem;
+  background-position-y: 2.3rem;
+}
+
+.quote__author {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.quote__author-designation {
+  opacity: 0.8;
 }
