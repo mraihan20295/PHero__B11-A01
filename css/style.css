@@ -261,12 +261,12 @@ img {
 }
 
 .news__thumbnail img {
-  height: 100%;
+  height: 350px;
   object-fit: cover;
 }
 
 .news__body {
-  max-width: 60rem;
+  max-width: 70rem;
 }
 
 .news__heading {
@@ -280,4 +280,54 @@ img {
 
 .news__body .btn {
   margin-top: 2rem;
+}
+
+/* Donation Section */
+
+.donation {
+  text-align: center;
+}
+
+.donation__description {
+  margin-top: 2.4rem;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.donation__amounts {
+  display: flex;
+  column-gap: 2.4rem;
+  justify-content: center;
+  margin-block: 3.2rem;
+}
+
+.donation__specified-amount {
+  font-weight: 700;
+  font-size: 4rem;
+  padding: 4rem;
+  border-radius: 16px;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.donation__specified-amount:nth-of-type(2) {
+  background-color: var(--color-secondary);
+}
+
+.donation__specified-amount:hover {
+  background-color: var(--color-secondary);
+}
+
+.donation__any-amount {
+  display: block;
+  margin: 3.2rem auto;
+  padding: 2rem 4rem;
+  border: none;
+  width: 75%;
+  font-family: inherit;
+  font-size: 2rem;
+  text-align: inherit;
+  outline: none;
 }
