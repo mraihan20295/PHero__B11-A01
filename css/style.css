@@ -80,7 +80,12 @@ main > section {
 }
 
 .btn--primary {
-  background: var(--color-primary);
+  background-color: var(--color-primary);
+  transition: background-color 0.15s;
+}
+
+.btn--primary:hover {
+  background-color: #005742;
 }
 
 .btn--small {
@@ -168,6 +173,14 @@ img {
   margin-top: 3.2rem;
 }
 
+.pillars .card {
+  transition: box-shadow 0.15s;
+}
+
+.pillars .card:hover {
+  box-shadow: 0 0 20px 2px #ddd;
+}
+
 /* Vision Section */
 
 .vision__heading {
@@ -184,8 +197,13 @@ img {
   margin-top: 2.4rem;
 }
 
+.vision__articles .btn:hover {
+  opacity: 0.8;
+}
+
 .vision__article-1 {
   background: rgba(84, 144, 245, 0.2);
+  transition: border 0.15s;
 }
 
 .vision__article-1 .btn {
@@ -206,6 +224,24 @@ img {
 
 .vision__article-3 .btn {
   background: rgba(255, 194, 57, 1);
+}
+
+.vision__article-1,
+.vision__article-2,
+.vision__article-3 {
+  transition: border 0.15s;
+}
+
+.vision__article-1:hover {
+  border: 1px solid rgba(84, 144, 245, 1);
+}
+
+.vision__article-2:hover {
+  border: 1px solid rgba(9, 161, 92, 1);
+}
+
+.vision__article-3:hover {
+  border: 1px solid rgba(255, 194, 57, 1);
 }
 
 /* Vision Quote Sub-Section*/
@@ -306,6 +342,10 @@ img {
 
 /* News-article Sub-section */
 
+.recent-news__caption {
+  width: 95%;
+}
+
 .news-article {
   margin-block: 2.4rem;
   display: flex;
@@ -315,7 +355,11 @@ img {
   background-color: #fff;
   border-radius: 24px;
   padding: 4.8rem;
-  box-shadow: 0 0 20px 2px #ccc;
+  transition: box-shadow 0.2s;
+}
+
+.news-article:hover {
+  box-shadow: 0 0 20px 2px #ddd;
 }
 
 .news-article:nth-of-type(even) {
@@ -419,6 +463,7 @@ img {
   margin-block: 2.4rem;
   margin-inline: auto;
   max-width: 70%;
+  transition: outline 0.15s;
 }
 
 .newsletter__email {
@@ -427,7 +472,6 @@ img {
   font-size: 1.6rem;
   border: none;
   outline: none;
-  /* display: block; */
   width: 100%;
   border-radius: 8px 0px 0px 8px;
 }
